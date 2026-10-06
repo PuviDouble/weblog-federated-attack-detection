@@ -1,0 +1,33 @@
+# Web Server Log Attack Detection — Requirements
+# Install: pip install -r requirements.txt
+
+# Core
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+
+# Gradient Boosting (best model for structured logs)
+xgboost>=1.7.0
+
+# Class imbalance handling (attacks are minority class)
+imbalanced-learn>=0.11.0
+
+# Deep learning (autoencoder for unlabeled log)
+tensorflow>=2.12.0
+
+# Federated Learning
+flwr>=1.5.0
+
+# Explainability (why was this flagged?)
+shap>=0.42.0
+
+# Model persistence
+joblib>=1.3.0
+
+# API (expose as REST endpoint to dashboard)
+fastapi>=0.100.0
+uvicorn>=0.23.0
+
+# Utilities
+python-dateutil>=2.8.2
+tqdm>=4.65.0

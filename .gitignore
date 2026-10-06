@@ -1,0 +1,41 @@
+# ── Web Log Project GitIgnore ──────────────────────────────────────────
+
+# Large Root Datasets (3.5GB access.log)
+/access.log
+
+# Heavy CSV Datasets (Download instructions provided in README)
+/data/csic_binary.csv
+/data/multiclass_attacks.csv
+
+# Keep sample / small log file for pipeline testing
+!/data/access.log
+
+# Trained Model Weights & Artifacts (Regenerate via main_pipeline.py)
+/models/*.keras
+/models/*.pkl
+!/models/.gitkeep
+
+# Output logs & threat alerts
+/outputs/*.csv
+/outputs/*.json
+!/outputs/.gitkeep
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments & IDEs
+.venv/
+venv/
+env/
+ENV/
+.vscode/
+.idea/
+*.swp
+
+# OS & Workspace Junk
+.DS_Store
+Thumbs.db
+output.docx
